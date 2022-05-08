@@ -1,13 +1,66 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(29, 37, 55);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.halo-logo{
+  aspect-ratio: 2/1.5;
+  width: 200px;
+  margin-left: 15px;
+  transform: translateY(10px);
+}
+.halo-central{
+  display: flex;
+  flex-direction: column;
+}
+.halo-central p{
+  color:rgb(214, 214, 214);
+  font-size: 1.8rem;
+  font-family: 'Fahkwang', sans-serif;
+  padding: 0;
+  margin: 0 0 0 35px;
+  transform: translateY(-50px);
+}
+.navbar{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(21, 117, 206); */
+}
+.navlist{
+  display: flex;
+  gap: 4vw;
+  list-style: none;
+  flex-direction: row;
+  margin-right: 100px;
+}
+.halo-ring{
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  width: 150px;
+  z-index: -1;
+}
+.nav-right-bar{
+  background-color: rgb(66, 125, 177);
+  width: 700px;
+  height: 600px;
+  border-bottom-left-radius: 20%;
+  position:absolute;
+  right: 0;
+  z-index: -2;
+  transform: translateY(-250px);
 }
